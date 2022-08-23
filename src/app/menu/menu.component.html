@@ -14,9 +14,11 @@
             <div>
                <span class="menu-item-title"> {{i.title}} </span>
             <div class="menu-item-subtitle" *ngFor="let j of items">
-                <div *ngIf="(i.id == j.id)">    
+                <div *ngIf="(i.id == j.id)"> 
+                    <div [routerLink]="j.routerLink">
                 <i class="{{j.icon}}"></i>
                 <span>{{j.label}}</span>
+                    </div>
             </div>
             </div>
             </div>

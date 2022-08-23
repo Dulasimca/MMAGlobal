@@ -10,6 +10,8 @@ import { ButtonModule } from 'primeng/button';
 import { CalendarModule } from 'primeng/calendar';
 import { DropdownModule } from 'primeng/dropdown';
 import { CheckboxModule } from 'primeng/checkbox';
+import { TableModule } from 'primeng/table';
+import { TabViewModule } from 'primeng/tabview';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -21,6 +23,9 @@ import { MenuComponent } from './menu/menu.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
 import { ContactsListComponent } from './FORMS-MODULE/contacts-list/contacts-list.component';
+import { FundUtilizationComponent } from './FORMS-MODULE/fund-utilization/fund-utilization.component';
+import { CallSheetComponent } from './FORMS-MODULE/call-sheet/call-sheet.component';
+import { ShootingScheduleComponent } from './FORMS-MODULE/shooting-schedule/shooting-schedule.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +35,10 @@ import { ContactsListComponent } from './FORMS-MODULE/contacts-list/contacts-lis
     MenuComponent,
     RegistrationComponent,
     LoginComponent,
-    ContactsListComponent
+    ContactsListComponent,
+    FundUtilizationComponent,
+    CallSheetComponent,
+    ShootingScheduleComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +54,8 @@ import { ContactsListComponent } from './FORMS-MODULE/contacts-list/contacts-lis
     CalendarModule,
     DropdownModule,
     CheckboxModule,
+    TableModule,
+    TabViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]
