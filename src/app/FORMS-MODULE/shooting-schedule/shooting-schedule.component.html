@@ -68,7 +68,8 @@
                 </div>
                 <div #row2 class="col-12 md:col-12 lg:col-12">
                     <p-table [columns]="shootingScheduleCols" [value]="shootingScheduleDetails" 
-                    [(selection)]="selectedPerson" dataKey="name" responsiveLayout="scroll">
+                    [(selection)]="selectedPerson" dataKey="name" styleClass="p-datatable-gridlines" 
+                     responsiveLayout="scroll">
                         <ng-template pTemplate="header" let-columns>
                             <tr>
                                 <th style="width: 3rem">

@@ -57,15 +57,15 @@
                                         readonly="true" required />
                                     <label for="_totalAmount">Total Amount</label>
                                 </span>
-                            </div>
-                            <div class="col-4 md:col-2 lg:col-1 no-pad-top">
+                            </div>&nbsp;&nbsp;
+                            <div class="col-4 md:col-2 lg:col-1">
                                 <button pButton type="button" label="Enter"></button>
                             </div>
                         </div>
                     </p-card>
                 </div>
                 <div #row3 class="col-12 md:col-12 lg:col-12">
-                    <p-table [columns]="fundCols" [value]="fundDetails" responsiveLayout="scroll">
+                    <p-table [columns]="fundCols" [value]="fundDetails" styleClass="p-datatable-gridlines"  responsiveLayout="scroll">
                         <ng-template pTemplate="header" let-columns>
                             <tr>
                                 <th>S.No.</th>
